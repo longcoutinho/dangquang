@@ -1,0 +1,99 @@
+.contact {
+    position: absolute;
+    top: 3832px;
+    left: 0px;
+    width: 1536px;
+    height: 864px;
+}
+
+.p-contact {
+    position: absolute;
+    top: 67px;
+    left: 83px;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 67px;
+    color: #FF5454;
+}
+
+.p-when-you-need {
+    position: absolute;
+    top: 76px;
+    left: 1141px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.when-you-need {
+    position: absolute;
+    top: 125px;
+    left: 1141px;
+    width: 150px;
+    height: 0px;
+    border-top: 3px solid #FF0000;
+}
+
+.contact-content {
+    position: absolute;
+    top: 244px;
+    left: 276px;
+    width: 984px;
+    height: 483px;
+    border: 0px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px #888888;
+}
+
+.form-contact {
+    position: absolute;
+    top: 94px;
+    left: 443px;
+    width: 465px;
+    height: 318px;
+}
+
+.form-contact > p {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.submit-contact {
+    position: absolute;
+    top: 282px;
+    left: 173px;
+    width: 119px;
+    height: 36px;
+    background-color: #2E1A67;
+    font-family: font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.submit-contact:hover {
+    background-color: #FF5454;
+    cursor: pointer;
+}
+
+.form-contact > input {
+    background-color: #2E1A67;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+.form-contact > input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+

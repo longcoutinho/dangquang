@@ -1,0 +1,63 @@
+.about {
+    position: absolute;
+    width: 1536px;
+    height: 864px;
+    left: 0px;
+    top: 864px;
+}
+
+.info {
+    position: absolute;
+    top: 73px;
+    left: 90px;
+    width: 471px;
+    height: 467px;
+}
+
+.about > img {
+    position: absolute;
+    width: 384px;
+    height: 431px;
+    left: 1041px;
+    top: 170px;
+}
+
+.p-avatar {
+    position: absolute;
+    top: 637px;
+    left: 1125px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 29px;
+    text-align: center;
+}
+
+.p-about {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 55px;
+    line-height: 67px;
+    font-weight: bold;
+    color: #FF5454;
+}
+
+.p-myself {
+    position: absolute;
+    left: 0px;
+    top: 140px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 3px solid #FF0000;
+    padding-bottom: 10px;
+    padding-right: 38px;
+}
+
+.p-info {
+    position: absolute;
+    top: 255px;
+    left: 0px;
+    font-size: 18px;
+    line-height: 22px;
+}

@@ -1,0 +1,104 @@
+.service {
+    position: absolute;
+    width: 1536px;
+    height: 1222px;
+    left: 0px;
+    top: 1728px;
+}
+
+.p-service {
+    position: absolute;
+    top: 53px;
+    left: 91px;
+    font-size: 55px;
+    line-height: 67px;
+    font-weight: bold;
+    color: #FF5454;
+}
+
+.what-can-i-do {
+    position: absolute;
+    top: 110px;
+    left: 1153px;
+    height: 0px;
+    width: 150px;
+    border-top: 3px solid #FF0000;
+}
+
+.p-what-can-i-do {
+    position: absolute;
+    top: 64px;
+    left: 1153px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.service-content {
+    position: absolute;
+    top: 401px;
+    left: 91px;
+    width: 1313px;
+    height: 577px;
+}
+
+.service-content > div {
+    width: 550px;
+    height: 196px;
+    border: 0px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.service-content > div > p:nth-child(2) {
+    position: absolute;
+    top: 13px;
+    left: 105px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #00D1FF;
+}
+
+.service-content > div > p:last-child{
+    position: absolute;
+    top: 85px;
+    left: 105px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.service-content > div > img {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.creative-design {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 20px #888888;
+}
+
+.editor {
+    position: absolute;
+    top: 0px;
+    left: 763px;
+    box-shadow: 0px 0px 20px #888888;
+}
+
+.photographer {
+    position: absolute;
+    top: 363px;
+    left: 352px;
+    box-shadow: 0px 0px 20px #888888;
+}
+
+#camera {
+    position: absolute;
+    top: 5px;
+}
+
