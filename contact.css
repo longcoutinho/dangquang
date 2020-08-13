@@ -3,13 +3,13 @@
     top: 3958px;
     left: 0px;
     width: 1536px;
-    height: 864px;
+    height: 910px;
 }
 
 .p-contact {
     position: absolute;
-    top: 67px;
-    left: 83px;
+    top: 78px;
+    left: 125px;
     font-weight: bold;
     font-size: 55px;
     line-height: 67px;
@@ -18,7 +18,7 @@
 
 .p-when-you-need {
     position: absolute;
-    top: 76px;
+    top: 87px;
     left: 1127px;
     font-weight: 200;
     font-size: 24px;
@@ -27,7 +27,7 @@
 
 .when-you-need {
     position: absolute;
-    top: 125px;
+    top: 130px;
     left: 1127px;
     width: 150px;
     height: 0px;

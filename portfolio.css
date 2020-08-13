@@ -8,8 +8,8 @@
 
 .p-portfolio {
     position: absolute;
-    top: 73px;
-    left: 95px;
+    top: 78px;
+    left: 125px;
     font-weight: bold;
     font-size: 55px;
     line-height: 67px;
@@ -18,7 +18,7 @@
 
 .p-my-recent-work {
     position: absolute;
-    top: 82px;
+    top: 87px;
     left: 1127px;
     font-weight: 200;
     font-size: 24px;

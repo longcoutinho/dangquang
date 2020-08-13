@@ -12,23 +12,6 @@
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Dang Quang</title>
-    <script>
-        function scrolltoHome(){
-            window.scrollTo(0,0);
-        }
-        function scrolltoAbout(){
-            window.scrollTo(0,864);
-        }
-        function scrolltoService(){
-            window.scrollTo(0,1728);
-        }
-        function scrolltoPortfolio(){
-            window.scrollTo(0,2950);
-        }
-        function scrolltoContact(){
-            window.scrollTo(0,3958);
-        }
-    </script>
 </head>
 <body>
     <div class="frame">
@@ -47,7 +30,7 @@
                 </ul>
             </div>
             <p class="p-let-me-design">Let me design it for you</p>    
-            <div class="button-show-more">
+            <div onclick="scrolltoAbout()" class="button-show-more">
                 <p>Show More</p>
             </div>
         </div>
@@ -160,6 +143,40 @@
             </div>
         </div>
     </div>
+    <script>
+        function scrolltoHome(){
+            window.scrollTo(0,0);
+        }
+        function scrolltoAbout(){
+            window.scrollTo(0,864);
+        }
+        function scrolltoService(){
+            window.scrollTo(0,1728);
+        }
+        function scrolltoPortfolio(){
+            window.scrollTo(0,2950);
+        }
+        function scrolltoContact(){
+            window.scrollTo(0,3958);
+        }
+        function scrolloutHome(){
+            if (document.body.scrollTop >= 863 || document.documentElement.scrollTop >= 863) {
+                var x = document.getElementsByClassName('menu');
+                if (x != null) {
+                    x[0].id="menu-fixed";
+                    console.log("haha");
+                }
+            }
+            else {
+                var x = document.getElementsByClassName('menu');
+                if (x != null) {
+                    x[0].id="";
+                    console.log("haha");
+                }
+            }
+        }
+        window.onscroll = function() {scrolloutHome()};
+    </script>
 </body>
 </html>
 
