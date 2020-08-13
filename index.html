@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Dang Quang</title>
+    <script>
+        function scrolltoHome(){
+            window.scrollTo(0,0);
+        }
+        function scrolltoAbout(){
+            window.scrollTo(0,864);
+        }
+        function scrolltoService(){
+            window.scrollTo(0,1728);
+        }
+        function scrolltoPortfolio(){
+            window.scrollTo(0,2950);
+        }
+        function scrolltoContact(){
+            window.scrollTo(0,3958);
+        }
+    </script>
 </head>
 <body>
     <div class="frame">
@@ -22,11 +39,11 @@
                     <p>LOGO</p>
                 </div>
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>SERVICE</li>
-                    <li>PORTFOLIO</li>
-                    <li>CONTACT</li>
+                    <li onclick="scrolltoHome()">HOME</li>
+                    <li onclick="scrolltoAbout()">ABOUT</li>
+                    <li onclick="scrolltoService()">SERVICE</li>
+                    <li onclick="scrolltoPortfolio()">PORTFOLIO</li>
+                    <li onclick="scrolltoContact()">CONTACT</li>
                 </ul>
             </div>
             <p class="p-let-me-design">Let me design it for you</p>    
