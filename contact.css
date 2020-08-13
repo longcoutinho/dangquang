@@ -1,6 +1,6 @@
 .contact {
     position: absolute;
-    top: 3832px;
+    top: 3958px;
     left: 0px;
     width: 1536px;
     height: 864px;
@@ -65,7 +65,7 @@
     left: 173px;
     width: 119px;
     height: 36px;
-    background-color: #2E1A67;
+    background-color: #100C2F;
     font-family: font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 20px;
@@ -74,16 +74,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
 }
 
 .submit-contact:hover {
-    background-color: #FF5454;
     cursor: pointer;
 }
 
+.submit-contact:hover .submit-left {
+    border: 1px solid #FF5454;
+    border-right: none;
+}
+
+.submit-contact:hover .submit-right {
+    border: 1px solid #FF5454;
+    border-left: none;
+}
+
+.submit-contact:hover .p-submit{
+    color: #FF5454;
+}
+
 .form-contact > input {
-    background-color: #2E1A67;
+    background-color: #100C2F;
     border: none;
     border-bottom: 1px solid white;
     color: white;
@@ -97,3 +109,22 @@
     border-bottom: 1px solid white;
 }
 
+.submit-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 100%;
+    border: 1px solid white;
+    border-right: none;
+}
+
+.submit-right {
+    position: absolute;
+    top: 0px;
+    left: 101px;
+    width: 18px;
+    height: 100%;
+    border: 1px solid white;
+    border-left: none;
+}

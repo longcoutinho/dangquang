@@ -10,7 +10,6 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.8;
 }
 
 .menu {
@@ -50,7 +49,7 @@
 
 .menu > ul > li {
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .menu > ul > li:hover {
@@ -67,26 +66,8 @@
     top: 393px;
     left: 398px;
     font-size: 64px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 78px;
-}
-
-.p-dang-quang {
-    position: absolute;
-    left: 1192px;
-    top: 582px;
-    font-size: 36px;
-    font-weight: 200;
-    line-height: 44px;
-}
-
-.p-designer {
-    position: absolute;
-    top: 660px;
-    left: 1263px;
-    font-size: 36px;
-    font-weight: 200;
-    line-height: 44px;
 }
 
 .button-show-more {

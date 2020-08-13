@@ -8,28 +8,27 @@
 
 .info {
     position: absolute;
-    top: 73px;
-    left: 90px;
+    top: 78px;
+    left: 126px;
     width: 471px;
-    height: 467px;
+    height: 591px;
 }
 
 .about > img {
     position: absolute;
-    width: 384px;
+    width: 446px;
     height: 431px;
-    left: 1041px;
-    top: 170px;
+    left: 908px;
+    top: 247px;
 }
 
 .p-avatar {
     position: absolute;
-    top: 637px;
-    left: 1125px;
-    font-size: 24px;
+    top: 428px;
+    left: 0px;
+    font-size: 18px;
     font-weight: normal;
-    line-height: 29px;
-    text-align: center;
+    line-height: 44px;
 }
 
 .p-about {
@@ -44,8 +43,8 @@
 
 .p-myself {
     position: absolute;
-    left: 0px;
-    top: 140px;
+    left: 1127px;
+    top: 87px;
     font-weight: 200;
     font-size: 24px;
     line-height: 29px;
@@ -56,7 +55,7 @@
 
 .p-info {
     position: absolute;
-    top: 255px;
+    top: 169px;
     left: 0px;
     font-size: 18px;
     line-height: 22px;
