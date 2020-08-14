@@ -43,6 +43,7 @@
     border: 0px solid #FFFFFF;
     box-sizing: border-box;
     box-shadow: 0px 0px 20px #888888;
+    display: none;
 }
 
 .form-contact {
@@ -56,7 +57,6 @@
 .form-contact > p {
     font-weight: 200;
     font-size: 20px;
-    line-height: 24px;
 }
 
 .submit-contact {
@@ -66,11 +66,6 @@
     width: 119px;
     height: 36px;
     background-color: #100C2F;
-    font-family: font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 24px;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,5 +124,72 @@
     position: absolute;
     left: 22px;
     color: #FF5454;
+    font-size: 20px;
+    font-weight: 200;
 }
 
+.how-to-contact {
+    position: absolute;
+    top: 415px;
+    left: 587px;
+    width: 362px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.how-to-contact:hover {
+    cursor: pointer;
+}
+
+.how-to-contact:hover .how-left {
+    width: 180px;
+    transition: width 0.25s;
+    transition-delay: 0s;
+}
+
+.how-to-contact:hover .how-right {
+    width: 180px;
+    transition: width 0.25s;
+    transition-delay: 0s;
+}
+
+.p-how {
+    position: absolute;
+    left: 126px;
+    top: 32px;
+    font-size: 48px;
+    font-weight: 200;
+    color: #FF5454;
+}
+
+.how-left {
+    height: 100%;
+    width: 53px;
+    transition: width 0.25s;
+    transition-delay: 0.25s;
+    border: 1px solid #FF5454;
+    border-right: none;
+}
+
+.how-right {
+    height: 100%;
+    width: 53px;
+    transition: width 0.25s;
+    transition-delay: 0.25s;
+    border: 1px solid #FF5454;
+    border-left: none;
+}
+
+.p-x {
+    position: absolute;
+    top: 430px;
+    left: 666px; 
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.p-x:hover {
+    cursor: pointer;
+}

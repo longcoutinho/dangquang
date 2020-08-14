@@ -117,16 +117,18 @@
 .swiper-pagination {
     position: absolute !important;
     top: 770px !important;
-    left: 593px !important;
+    left: 655px !important;
 }
 
 .swiper-pagination-bullet {
     background-color: white !important;
-    padding: 10px !important;
-    margin: 15px !important;
+    padding: 5px !important;
+    margin: 10px !important;
+    outline: none !important;
 }
 
 .swiper-pagination-bullet-active {
     background-color: #FFA553 !important;
+    outline: none !important;
 }
 

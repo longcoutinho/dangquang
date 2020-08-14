@@ -179,12 +179,54 @@
                     <p style="position: absolute; top: 106px; left: 185px;">Message</p>
                     <input style="position: absolute; top: 196px; left: 0px; width: 465px; height: 30px;" type="text">
                     <div class="submit-contact">
-                    <p class="p-submit">Submit</p>
-                    <div class="submit-left"></div>
-                    <div class="submit-right"></div>
+                        <p class="p-submit">Submit</p>
+                        <div class="submit-left"></div>
+                        <div class="submit-right"></div>
                     </div>
                 </div>
+                <p class="p-x" onclick="hidecontactcontent()">x</p>
+                <script>
+                    function hidecontactcontent(){
+                        console.log("haha");
+                        var x = document.getElementsByClassName('contact-content');
+                        if (x!=null){
+                            console.log("hihi");
+                            var i;
+                            for(i = 0 ; i < x.length ; i++)
+                                x[i].style.display = "none";
+                        }
+                        var y = document.getElementsByClassName('how-to-contact');
+                        if (y!=null){
+                            var i;
+                            for(i = 0 ; i < y.length ; i++)
+                                y[i].style.display = "flex";
+                        }
+                    }
+                </script>
             </div>
+            <div class="how-to-contact" onclick="showcontactcontent()">
+                <p class="p-how">How</p>
+                <div class="how-left"></div>
+                <div class="how-right"></div>
+            </div>
+            <script>
+                function showcontactcontent(){
+                    console.log("haha");
+                    var x = document.getElementsByClassName('contact-content');
+                    if (x!=null){
+                        console.log("hihi");
+                        var i;
+                        for(i = 0 ; i < x.length ; i++)
+                            x[i].style.display = "flex";
+                    }
+                    var y = document.getElementsByClassName('how-to-contact');
+                    if (y!=null){
+                        var i;
+                        for(i = 0 ; i < y.length ; i++)
+                            y[i].style.display = "none";
+                    }
+                }
+            </script>
         </div>
     </div>
     <script>
