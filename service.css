@@ -76,11 +76,35 @@
     height: 50px;
 }
 
+@keyframes cd-animation {
+    from {
+        left: -500px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 0.5;
+    }
+}
+
 .creative-design {
     position: absolute;
     top: 0px;
     left: 0px;
     box-shadow: 0px 0px 20px #888888;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+@keyframes ed-animation {
+    from {
+        left: 1263px;
+        opacity: 0;
+    }
+    to {
+        left: 763px;
+        opacity: 0.5;
+    }
 }
 
 .editor {
@@ -88,6 +112,19 @@
     top: 0px;
     left: 763px;
     box-shadow: 0px 0px 20px #888888;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+@keyframes pg-animation {
+    from {
+        top: 552px;
+        opacity: 0;
+    }
+    to {
+        top: 352px;
+        opacity: 0.5;
+    }
 }
 
 .photographer {
@@ -95,6 +132,8 @@
     top: 363px;
     left: 352px;
     box-shadow: 0px 0px 20px #888888;
+    animation-duration: 2s;
+    opacity: 0;
 }
 
 #camera {

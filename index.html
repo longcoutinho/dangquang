@@ -272,6 +272,23 @@
                     y[0].style.opacity = "1";
                 }
             }
+            if (document.body.scrollTop >= 1727 || document.documentElement.scrollTop >= 1727) {
+                var x = document.getElementsByClassName('creative-design');
+                if (x != null) {
+                    x[0].style.animationName = "cd-animation";
+                    x[0].style.opacity = "1";
+                }
+                var y = document.getElementsByClassName('editor');
+                if (y != null) {
+                    y[0].style.animationName = "ed-animation";
+                    y[0].style.opacity = "1";
+                }
+                var z = document.getElementsByClassName('photographer');
+                if (z != null) {
+                    z[0].style.animationName = "pg-animation";
+                    z[0].style.opacity = "1";
+                }
+            }
         }
         window.onscroll = function() {scrolloutHome() , animationabout()};
     </script>
