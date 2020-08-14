@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Dang Quang</title>
 </head>
 <body>
@@ -91,25 +93,67 @@
             <p class="p-portfolio">Portfolio</p>
             <p class="p-my-recent-work">My recent work</p>
             <div class="my-recent-work"></div>
-            <div class="product">
-                <div class="product-title">
-                    <div>
-                        <p>Graphic Design</p>
-                    </div>
-                    <div>
-                        <p>Ptg</p>
-                    </div>
-                    <div>
-                        <p>Video Edit</p>
-                    </div>
+            <div class="product-title">
+                <div onclick="changecolortoc4()">
+                    <p>Graphic Design</p>
                 </div>
-                <div class="product-content">
-                    <div class="product-image"></div>
-                    <div class="product-image"></div>
-                    <div class="product-image"></div>
+                <div onclick="changecolortogreen()">
+                    <p>Ptg</p>
+                </div>
+                <div onclick="changecolortoorange()">
+                    <p>Video Edit</p>
                 </div>
             </div>
+            <script>
+                function changecolorto(randomcolor){
+                    var x = document.getElementsByClassName('swiper-slide');
+                    console.log("haha");
+                    if (x != null) {
+                        console.log("1");
+                        var i;
+                        for(i = 0 ; i < x.length ; i++)
+                            x[i].style.backgroundColor = randomcolor;
+                    }
+                }
+                function changecolortogreen(){
+                    changecolorto("green");
+                }
+                function changecolortoc4(){
+                    changecolorto("#C4C4C4");
+                }
+                function changecolortoorange(){
+                    changecolorto("orange");
+                }
+            </script>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+        <script>
+            var swiper = new Swiper('.swiper-container',{
+                slidesPerView: 3,
+                spaceBetween: 164,
+                loop: true, 
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
         <div class="contact">
             <p class="p-contact">Contact</p>
             <p class="p-when-you-need">When you need something</p>
@@ -164,14 +208,12 @@
                 var x = document.getElementsByClassName('menu');
                 if (x != null) {
                     x[0].id="menu-fixed";
-                    console.log("haha");
                 }
             }
             else {
                 var x = document.getElementsByClassName('menu');
                 if (x != null) {
                     x[0].id="";
-                    console.log("haha");
                 }
             }
         }

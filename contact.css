@@ -72,7 +72,7 @@
     line-height: 24px;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -80,18 +80,16 @@
     cursor: pointer;
 }
 
-.submit-contact:hover .submit-left {
-    border: 1px solid #FF5454;
-    border-right: none;
+.submit-contact:hover .submit-left{
+    width: 58px;
+    transition: width 0.25s;
+    transition-delay: 0s;
 }
 
-.submit-contact:hover .submit-right {
-    border: 1px solid #FF5454;
-    border-left: none;
-}
-
-.submit-contact:hover .p-submit{
-    color: #FF5454;
+.submit-contact:hover .submit-right{
+    width: 58px;
+    transition: width 0.25s;
+    transition-delay: 0s;
 }
 
 .form-contact > input {
@@ -110,21 +108,26 @@
 }
 
 .submit-left {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 18px;
+    transition: width 0.25s;
+    transition-delay: 0.25s;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid #FF5454;
     border-right: none;
 }
 
 .submit-right {
-    position: absolute;
-    top: 0px;
-    left: 101px;
     width: 18px;
+    transition: width 0.25s;
+    transition-delay: 0.25s;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid #FF5454;
     border-left: none;
 }
+
+.p-submit {
+    position: absolute;
+    left: 22px;
+    color: #FF5454;
+}
+
