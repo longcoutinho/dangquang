@@ -289,6 +289,18 @@
                     z[0].style.opacity = "1";
                 }
             }
+            if (document.body.scrollTop >= 2949 || document.documentElement.scrollTop >= 2949) {
+                var x = document.getElementsByClassName('product-title');
+                if (x != null) {
+                    x[0].style.animationName = "pt-animation";
+                    x[0].style.opacity = "1";
+                }
+                var y = document.getElementsByClassName('swiper-container');
+                if (y != null) {
+                    y[0].style.animationName = "sc-animation";
+                    y[0].style.opacity = "1";
+                }
+            }
         }
         window.onscroll = function() {scrolloutHome() , animationabout()};
     </script>

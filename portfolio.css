@@ -34,6 +34,16 @@
     border-top: 3px solid #FF0000;
 }
 
+@keyframes pt-animation {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+    to {
+        top: 300px;
+        opacity: 0.5;
+    }
+}
 
 .product-title {
     position: absolute;
@@ -49,6 +59,8 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 20px #888888;
+    animation-duration: 2s;
+    opacity: 0;
 }
 
 .product-title > div {
@@ -81,11 +93,23 @@
     padding: 20px;
 }
 
+@keyframes sc-animation {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 1228px;
+    }
+}
+
 .swiper-container {
     position: absolute;
     top: 502px;
     height: 200px;
     width: 1228px;
+    opacity: 0;
+    animation-duration: 2s;
 }
 
 .swiper-slide {
