@@ -37,8 +37,8 @@
             </div>
         </div>
         <div class="about">
+            <p class="p-about">About</p>
             <div class="info">
-                <p class="p-about">About</p>
                 <p class="p-info">Trôi lang thang đôi chân đưa tâm hồn cô liêu<br> 
                     Vang đâu tiếng rao thoáng qua phiên chợ chiều<br>
                     Từng nhiều ước ao, nhiều mộng đẹp biết bao<br> 
@@ -52,7 +52,7 @@
                 Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;0902130709<br>
                 Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;quangyami288@gmail.com</p>
             </div>
-            <img src="avatar.jpg">
+            <img class="img-avatar" src="avatar.jpg">
             <p class="p-myself">Myself</p>
         </div>
         <div class="service">
@@ -261,10 +261,15 @@
         }
         function animationabout(){
             if (document.body.scrollTop >= 763 || document.documentElement.scrollTop >= 763) {
-                var x = document.getElementsByClassName('about');
+                var x = document.getElementsByClassName('info');
                 if (x != null) {
-                    x[0].style.animationName = "example";
+                    x[0].style.animationName = "info-animation";
                     x[0].style.opacity = "1";
+                }
+                var y = document.getElementsByClassName('img-avatar');
+                if (y != null) {
+                    y[0].style.animationName = "img-animation";
+                    y[0].style.opacity = "1";
                 }
             }
         }
