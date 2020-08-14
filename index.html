@@ -259,7 +259,16 @@
                 }
             }
         }
-        window.onscroll = function() {scrolloutHome()};
+        function animationabout(){
+            if (document.body.scrollTop >= 763 || document.documentElement.scrollTop >= 763) {
+                var x = document.getElementsByClassName('about');
+                if (x != null) {
+                    x[0].style.animationName = "example";
+                    x[0].style.opacity = "1";
+                }
+            }
+        }
+        window.onscroll = function() {scrolloutHome() , animationabout()};
     </script>
 </body>
 </html>

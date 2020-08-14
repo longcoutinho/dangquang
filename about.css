@@ -1,9 +1,22 @@
+@keyframes example {
+    from {
+        top: 600px;
+        opacity: 0;
+    }
+    to {
+        top: 864px;
+        opacity: 0.5;
+    }
+}
+
 .about {
     position: absolute;
     width: 1536px;
     height: 864px;
     left: 0px;
     top: 864px;
+    animation-duration: 2s;
+    opacity: 0;
 }
 
 .info {
