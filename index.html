@@ -300,6 +300,16 @@
                     y[0].style.animationName = "sc-animation";
                     y[0].style.opacity = "1";
                 }
+                var z = document.getElementsByClassName('swiper-button-next');
+                if (z != null) {
+                    z[0].style.animationName = "sb-animation";
+                    z[0].style.opacity = "1";
+                }
+                var t = document.getElementsByClassName('swiper-button-prev');
+                if (t != null) {
+                    t[0].style.animationName = "sb-animation";
+                    t[0].style.opacity = "1";
+                }
             }
         }
         window.onscroll = function() {scrolloutHome() , animationabout()};
