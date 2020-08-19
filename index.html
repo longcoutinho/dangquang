@@ -94,14 +94,14 @@
             <p class="p-my-recent-work">My recent work</p>
             <div class="my-recent-work"></div>
             <div class="product-title">
-                <div onclick="changecolortoc4()">
+                <div class="product-title-divs" onclick="changecolortoc4()" style="background-color: #FFA553;">
                     <p>Graphic Design</p>
                 </div>
-                <div onclick="changecolortogreen()">
-                    <p>Ptg</p>
+                <div class="product-title-divs" onclick="changecolortogreen()">
+                    <p id="p-ptg">Ptg</p>
                 </div>
-                <div onclick="changecolortoorange()">
-                    <p>Video Edit</p>
+                <div class="product-title-divs" onclick="changecolortoorange()">
+                    <p id="p-video-edit">Video Edit</p>
                 </div>
             </div>
             <script>
@@ -109,20 +109,31 @@
                     var x = document.getElementsByClassName('swiper-slide');
                     console.log("haha");
                     if (x != null) {
-                        console.log("1");
                         var i;
                         for(i = 0 ; i < x.length ; i++)
                             x[i].style.backgroundColor = randomcolor;
                     }
                 }
-                function changecolortogreen(){
-                    changecolorto("green");
+                function bgtoorange(idname){
+                    var x = document.getElementsByClassName("product-title-divs");
+                    if (x!=null) {
+                        var i;
+                        for(i = 0 ; i < x.length ; i++)
+                            x[i].style.backgroundColor = "#100E2F";
+                        x[idname].style.backgroundColor = "#FFA553";
+                    }
                 }
                 function changecolortoc4(){
                     changecolorto("#C4C4C4");
+                    bgtoorange(0);
+                }
+                function changecolortogreen(){
+                    changecolorto("green");
+                    bgtoorange(1);
                 }
                 function changecolortoorange(){
                     changecolorto("orange");
+                    bgtoorange(2);
                 }
             </script>
             <div class="swiper-container">
