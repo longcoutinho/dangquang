@@ -231,19 +231,39 @@
     </div>
     <script>
         function scrolltoHome(){
-            window.scrollTo(0,0);
+            window.scrollTo({
+                top: 0, 
+                left: 0, 
+                behavior: 'smooth' 
+            });
         }
         function scrolltoAbout(){
-            window.scrollTo(0,864);
+            window.scrollTo({
+                top: 864,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
         function scrolltoService(){
-            window.scrollTo(0,1728);
+            window.scrollTo({
+                top: 1728,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
         function scrolltoPortfolio(){
-            window.scrollTo(0,2950);
+            window.scrollTo({
+                top: 2950,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
         function scrolltoContact(){
-            window.scrollTo(0,3958);
+            window.scrollTo({
+                top: 3958,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
         function scrolloutHome(){
             if (document.body.scrollTop >= 863 || document.documentElement.scrollTop >= 863) {
